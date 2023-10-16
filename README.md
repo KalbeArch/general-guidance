@@ -1,16 +1,18 @@
 # general-guidance v1.0
 
+=================================================================
+
 - [Code Writing Guidelines](#code-writing-guidelines)
--  [Table Naming Guidelines](#table-naming-guidelines)
+- [Table Naming Guidelines](#table-naming-guidelines)
 - [UI/UX](#ui-ux)
 - [Version Control](#version-control)
 - [API/Stored Procedure Documentation](#api-docs)
 - [Scheduler Documentation](#sch-docs)
 - [Penetration Test Guidance](#pentest-docs)
 
-----------------------------------
+=================================================================
 
-## Code Writing Guidelines(#code-writing-guidelines)
+## Code Writing Guidelines
 ### Content1
 
 1. [Prinsip *single responsibility*](#prinsip-single-responsibility)
@@ -593,3 +595,83 @@ Jangan pernah menaruh logika apa pun di file `route`.
 Minimalkan penggunaan *vanilla* PHP di *template blade*.
 
 [back to top](#content1)
+
+=================================================================
+
+## Table Naming Guidelines
+### Content2
+
+## Database Naming
+
+1. **Use Descriptive Names:** Choose a name for your database that clearly represents its purpose or the application it serves. Avoid vague or generic names.
+
+2. **Use Lowercase Letters:** Use lowercase letters for database names to ensure consistency and reduce the risk of errors.
+
+3. **Use Underscores or Hyphens:** To improve readability, you can separate words in the database name with underscores (_) or hyphens (-). For example, "my_database" or "my-database."
+
+[back to top](#content2)
+
+## Table Naming
+
+1. **Use Singular Nouns:** Name your tables using singular nouns rather than plural nouns. For example, "user" instead of "users."
+
+2. **Be Consistent:** Maintain consistency in table names throughout your database. Use a standard naming convention and stick to it.
+
+3. **Use Underscores:** To separate words in table names, consider using underscores, making them more readable. For example, "user_profile" or "order_history."
+
+4. **Include Relationships:** When designing tables that have relationships with other tables, use names that reflect the relationship. For example, "user_id" is a common foreign key for a user-related table.
+
+5. **Avoid Reserved Words:** Do not use database or SQL reserved words as table names to prevent conflicts and errors. Each database management system may have a list of reserved words.
+
+6. **Use Snake Case:** If you choose to use word separation, use snake_case (e.g., "order_details") rather than camelCase or PascalCase.
+
+[back to top](#content2)
+
+## Foreign Key
+
+1. Because in kalbe we integrate with many server/database then foreign key is not neccessary
+
+[back to top](#content2)
+
+## View Naming
+
+1. Use prefix "vw" for any view created, example "vw_struktur_sales_mkt"
+
+[back to top](#content2)
+
+## Stored Procedure Naming
+
+1. Use prefix "sp" for any stored procedure created, example "sp_generate_product"
+
+[back to top](#content2)
+
+=================================================================
+
+## UI/UX
+### Content3
+
+## Login Form
+1. Contain Logo of application, can be on left or middle side
+2. Contain placeholder for username and password
+3. Login button that easy to read
+4. Name of app that defined on login form
+5. Don't forget add validation for wrong password/username
+
+[back to top](#content3)
+
+## Maintainable Menu and Access Menu
+1. App contain a maintanable master menu and access menu
+2. Access menu able to apply for *jabatan* or by *nik*
+
+[back to top](#content3)
+
+## Dropdown
+1. Use select2 searable dropdown
+
+[back to top](#content3)
+
+## Template
+1. It is recommended to use the available templates
+
+[back to top](#content3)
+
