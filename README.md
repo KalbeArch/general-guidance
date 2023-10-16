@@ -1,4 +1,4 @@
-[general-guidance v1.0](#general-guidance)
+# General Guidance
 
 =================================================================
 
@@ -63,12 +63,6 @@ Contoh lebih baik:
 ```php
 // Determine if there are any joins.
 if (count((array) $builder->getQuery()->joins) > 0)
-```
-
-Contoh terbaik:
-
-```php
-if ($this->hasJoins())
 ```
 
 [back to top](#general-guidance)
