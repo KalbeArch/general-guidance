@@ -1,53 +1,37 @@
 # general-guidance v1.0
 
-1. [Code Writing Guidelines](#code-writing-guidelines)
-2. [Table Naming Guidelines](#table-naming-guidelines)
-3. [UI/UX](#ui-ux)
-4. [Version Control](#version-control)
-5. [API/Stored Procedure Documentation](#api-docs)
-6. [Scheduler Documentation](#sch-docs)
-7. [Penetration Test Guidance](#pentest-docs)
+- [Code Writing Guidelines](#code-writing-guidelines)
+-  [Table Naming Guidelines](#table-naming-guidelines)
+- [UI/UX](#ui-ux)
+- [Version Control](#version-control)
+- [API/Stored Procedure Documentation](#api-docs)
+- [Scheduler Documentation](#sch-docs)
+- [Penetration Test Guidance](#pentest-docs)
 
 
 ----------------------------------
 
 ## Code Writing Guidelines(#code-writing-guidelines)
+### Content1
 
-- [Prinsip *single responsibility*](#prinsip-single-responsibility)
-
-- [Model tebal, *controller* tipis](#model-tebal-controller-tipis)
-
-- [Validasi](#validasi)
-
-- [*Business logic* harus di dalam kelas *services*](#business-logic-harus-di-dalam-kelas-services)
-
-- [*Don't repeat yourself* (DRY)](#dont-repeat-yourself-dry)
-
-- [Lebih memilih menggunakan *Eloquent* atau *Query Builder*  daripada menggunakan query SQL mentah. Lebih memilih *collections* daripada *array*](#lebih-memilih-menggunakan-eloquent-daripada-menggunakan-query-builder-dan-query-sql-mentah-lebih-memilih-collections-daripada-array)
-
-- [*Mass assignment*](#mass-assignment)
-
-- [Jangan mengeksekusi kueri dalam *template blade* dan gunakan *eager loading* (masalah N + 1)](#jangan-mengeksekusi-kueri-dalam-template-blade-dan-gunakan-eager-loading-masalah-n-1)
-
-- [Komentari kode anda, tetapi lebih baik *method* dan nama variabel yang deskriptif daripada komentar](#komentari-kode-anda-tetapi-lebih-baik-method-dan-nama-variabel-yang-deskriptif-daripada-komentar)
-
-- [Jangan letakkan JS dan CSS di *template blade* dan jangan letakkan HTML apa pun di kelas PHP](#jangan-letakkan-js-dan-css-di-template-blade-dan-jangan-letakkan-html-apa-pun-di-kelas-php)
-
-- [Gunakan file *config*, *language*, dan konstanta daripada teks dalam kode](#gunakan-file-config-language-dan-konstanta-daripada-teks-dalam-kode)
-
-- [Gunakan *tools* standar Laravel yang diterima oleh komunitas](#gunakan-tools-standar-laravel-yang-diterima-oleh-komunitas)
-
-- [Ikuti konvensi penamaan Laravel](#ikuti-konvensi-penamaan-laravel)
-
-- [Gunakan sintaks yang lebih pendek dan lebih mudah dibaca jika memungkinkan](#gunakan-sintaks-yang-lebih-pendek-dan-lebih-mudah-dibaca-jika-memungkinkan)
-
-- [Gunakan *IoC Container* atau *facades* daripada kelas baru](#gunakan-ioc-container-atau-facades-daripada-kelas-baru)
-
-- [Jangan mendapatkan data dari file `.env` secara langsung](#jangan-mendapatkan-data-dari-file-env-secara-langsung)
-
-- [Simpan tanggal dalam format standar. Gunakan *accessors* dan *mutators* untuk mengubah format tanggal](#simpan-tanggal-dalam-format-standar-gunakan-accessors-dan-mutators-untuk-mengubah-format-tanggal)
-
-- [Praktik bagus lainnya](#praktik-bagus-lainnya)
+1. [Prinsip *single responsibility*](#prinsip-single-responsibility)
+2. [Model tebal, *controller* tipis](#model-tebal-controller-tipis)
+3. [Validasi](#validasi)
+4. [*Business logic* harus di dalam kelas *services*](#business-logic-harus-di-dalam-kelas-services)
+5. [*Don't repeat yourself* (DRY)](#dont-repeat-yourself-dry)
+6. [Lebih memilih menggunakan *Eloquent* atau *Query Builder*  daripada menggunakan query SQL mentah. Lebih memilih *collections* daripada *array*](#lebih-memilih-menggunakan-eloquent-daripada-menggunakan-query-builder-dan-query-sql-mentah-lebih-memilih-collections-daripada-array)
+7. [*Mass assignment*](#mass-assignment)
+8. [Jangan mengeksekusi kueri dalam *template blade* dan gunakan *eager loading* (masalah N + 1)](#jangan-mengeksekusi-kueri-dalam-template-blade-dan-gunakan-eager-loading-masalah-n-1)
+9. [Komentari kode anda, tetapi lebih baik *method* dan nama variabel yang deskriptif daripada komentar](#komentari-kode-anda-tetapi-lebih-baik-method-dan-nama-variabel-yang-deskriptif-daripada-komentar)
+10. [Jangan letakkan JS dan CSS di *template blade* dan jangan letakkan HTML apa pun di kelas PHP](#jangan-letakkan-js-dan-css-di-template-blade-dan-jangan-letakkan-html-apa-pun-di-kelas-php)
+11. [Gunakan file *config*, *language*, dan konstanta daripada teks dalam kode](#gunakan-file-config-language-dan-konstanta-daripada-teks-dalam-kode)
+12. [Gunakan *tools* standar Laravel yang diterima oleh komunitas](#gunakan-tools-standar-laravel-yang-diterima-oleh-komunitas)
+13. [Ikuti konvensi penamaan Laravel](#ikuti-konvensi-penamaan-laravel)
+14. [Gunakan sintaks yang lebih pendek dan lebih mudah dibaca jika memungkinkan](#gunakan-sintaks-yang-lebih-pendek-dan-lebih-mudah-dibaca-jika-memungkinkan)
+15. [Gunakan *IoC Container* atau *facades* daripada kelas baru](#gunakan-ioc-container-atau-facades-daripada-kelas-baru)
+16. [Jangan mendapatkan data dari file `.env` secara langsung](#jangan-mendapatkan-data-dari-file-env-secara-langsung)
+17. [Simpan tanggal dalam format standar. Gunakan *accessors* dan *mutators* untuk mengubah format tanggal](#simpan-tanggal-dalam-format-standar-gunakan-accessors-dan-mutators-untuk-mengubah-format-tanggal)
+18. [Praktik bagus lainnya](#praktik-bagus-lainnya)
 
 ### **Prinsip *single responsibility***
 
@@ -132,7 +116,7 @@ class Client extends Model
 }
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top]((#content1))
 
 ### **Validasi**
 
