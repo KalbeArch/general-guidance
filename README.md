@@ -14,7 +14,7 @@
 
 ## Code Writing Guidelines
 
-### **Lebih memilih menggunakan *Eloquent* daripada menggunakan *Query Builder* dan query SQL mentah. Lebih memilih *collections* daripada *array***
+### **Lebih memilih menggunakan *Eloquent* atau *Query Builder*  daripada menggunakan  RAW SQL. Lebih memilih *collections* daripada *array***
 *Eloquent* memungkinkan anda menulis kode yang dapat dibaca dan *maintainable*. Dan, *Eloquent* memiliki *built-in tools* yang bagus seperti *soft deletes*, *events*, *scopes*, dll.
 
 Contoh buruk:
