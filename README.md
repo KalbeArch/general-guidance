@@ -90,7 +90,7 @@ public function getFullNameShort(): string
 }
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#code-writing-guidelines)
 
 ### **Model tebal, *controller* tipis**
 
