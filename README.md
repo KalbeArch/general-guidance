@@ -11,7 +11,7 @@
 
 ----------------------------------
 
-## Code Writing Guidelines
+## Code Writing Guidelines(#code-writing-guidelines)
 
 - [Prinsip *single responsibility*](#prinsip-single-responsibility)
 
