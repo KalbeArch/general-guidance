@@ -8,7 +8,6 @@
 - [Scheduler Documentation](#sch-docs)
 - [Penetration Test Guidance](#pentest-docs)
 
-
 ----------------------------------
 
 ## Code Writing Guidelines(#code-writing-guidelines)
@@ -116,7 +115,7 @@ class Client extends Model
 }
 ```
 
-[back to top]((#content1))
+[back to top](#content1)
 
 ### **Validasi**
 
