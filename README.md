@@ -73,7 +73,7 @@ public function getFullNameShort(): string
 }
 ```
 
-[back to top](#code-writing-guidelines)
+[back to top](#content1)
 
 ### **Model tebal, *controller* tipis**
 
@@ -157,7 +157,7 @@ class PostRequest extends Request
 }
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### ***Business logic* harus di dalam kelas *services***
 
@@ -197,7 +197,7 @@ class ArticleService
 }
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### ***Don't repeat yourself* (DRY)**
 
@@ -240,7 +240,7 @@ public function getArticles()
 }
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Lebih memilih menggunakan *Eloquent* daripada menggunakan *Query Builder* dan query SQL mentah. Lebih memilih *collections* daripada *array***
 
@@ -279,7 +279,7 @@ Article::has('user.profile')->verified()->latest()->get();
 
 
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### ***Mass assignment***
 
@@ -302,7 +302,7 @@ Contoh terbaik:
 $category->article()->create($request->validated());
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Jangan mengeksekusi kueri dalam *template blade* dan gunakan *eager loading* (masalah N + 1)**
 
@@ -324,7 +324,7 @@ $users = User::with('profile')->get();
 @endforeach
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Komentari kode anda, tetapi lebih baik *method* dan nama variabel yang deskriptif daripada komentar**
 
@@ -347,7 +347,7 @@ Contoh terbaik:
 if ($this->hasJoins())
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Jangan letakkan JS dan CSS di *template blade* dan jangan letakkan HTML apa pun di kelas PHP**
 
@@ -375,7 +375,7 @@ let article = $('#article').val();
 
 Cara terbaik adalah dengan menggunakan *package* `PHP to JS` khusus untuk mentransfer data.
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Gunakan file *config*, *language*, dan konstanta daripada teks dalam kode**
 
@@ -401,7 +401,7 @@ public function isNormal()
 return back()->with('message', __('app.article_added'));
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Gunakan *tools* standar Laravel yang diterima oleh komunitas**
 
@@ -429,7 +429,7 @@ Generating testing data | Seeder classes, Model Factories, Faker | Creating test
 Task scheduling | Laravel Task Scheduler | Scripts and 3rd party packages
 DB | MySQL, PostgreSQL, SQLite, SQL Server | MongoDB
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Ikuti konvensi penamaan Laravel**
 
@@ -468,7 +468,7 @@ Enum | singular | UserType | ~~UserTypes~~, ~~UserTypeEnum~~
 FormRequest | singular | UpdateUserRequest | ~~UpdateUserFormRequest~~, ~~UserFormRequest~~, ~~UserRequest~~
 Seeder | singular | UserSeeder | ~~UsersSeeder~~
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Gunakan sintaks yang lebih pendek dan lebih mudah dibaca jika memungkinkan**
 
@@ -507,7 +507,7 @@ Sintaks umum | Sintaks pendek dan mudah dibaca
 `->select('id', 'name')->get()` | `->get(['id', 'name'])`
 `->first()->name` | `->value('name')`
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Gunakan *IoC Container* atau *facades* daripada kelas baru**
 
@@ -533,7 +533,7 @@ public function __construct(User $user)
 $this->user->create($request->validated());
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Jangan mendapatkan data dari file `.env` secara langsung**
 
@@ -555,7 +555,7 @@ Contoh terbaik:
 $apiKey = config('api.key');
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Simpan tanggal dalam format standar. Gunakan *accessors* dan *mutators* untuk mengubah format tanggal**
 
@@ -584,7 +584,7 @@ public function getSomeDateAttribute($date)
 {{ $object->ordered_at->some_date }}
 ```
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
 
 ### **Praktik bagus lainnya**
 
@@ -592,4 +592,4 @@ Jangan pernah menaruh logika apa pun di file `route`.
 
 Minimalkan penggunaan *vanilla* PHP di *template blade*.
 
-[🔝 back to top]((#code-writing-guidelines))
+[back to top](#content1)
