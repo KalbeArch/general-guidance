@@ -6,9 +6,9 @@
 - [Table Naming Guidelines](#table-naming-guidelines)
 - [UI/UX](#ui-ux)
 - [Version Control](#version-control)
-- [Scheduler/Stored Procedure Documentation](#sch-docs)
-- [Merging Documentation](#merging-docs)
-- [Penetration Test Guidance](#pentest-docs)
+- [Scheduler/Stored Procedure Documentation](#scheduler/stored-procedure-documentation)
+- [Merging Documentation](#merging-documentation)
+- [Penetration Test Guidance](#penetration-test-guidance)
 
 =================================================================
 
@@ -287,7 +287,6 @@ public function getSomeDateAttribute($date)
 =================================================================
 
 ## Scheduler/Stored Procedure Documentation
-### Content5
 
 ## You can read existing API/Stored Procedure Documentation
 Please add yours too!
